@@ -1,5 +1,7 @@
 from string import punctuation
+import sys
 
+filename = sys.argv[1]
 
 def word_count(filename):
     open_file = open(filename)
@@ -15,4 +17,6 @@ def word_count(filename):
     open_file.close()
     #return counted_words
 
-word_count("twain.txt")
+word_count(filename)
+
+#word_count("twain.txt")
